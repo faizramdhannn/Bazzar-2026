@@ -506,14 +506,14 @@ export default function Home() {
             disabled={loading || cart.length === 0}
             className="px-4 py-3 rounded-lg text-sm font-medium bg-orange-500 text-white hover:bg-orange-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
           >
-            {loading ? 'Menyimpan...' : 'Simpan Unpaid'}
+            {loading ? 'Menyimpan...' : 'Unpaid'}
           </button>
           <button
             onClick={() => handleSaveOrder('paid')}
             disabled={loading || cart.length === 0}
             className="px-4 py-3 rounded-lg text-sm font-medium bg-green-500 text-white hover:bg-green-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
           >
-            {loading ? 'Menyimpan...' : 'Simpan Paid'}
+            {loading ? 'Menyimpan...' : 'Paid'}
           </button>
         </div>
       </div>
